@@ -4,8 +4,6 @@ import userReducer from "./user/userSlice";
 import {persistReducer} from "redux-persist";
 import storage from 'redux-persist/lib/storage';
 
-
-
 const rootReducers = combineReducers({user: userReducer});
 
 const persistConfig = {

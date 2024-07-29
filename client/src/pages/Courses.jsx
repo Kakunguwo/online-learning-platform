@@ -1,8 +1,12 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 
 function Courses() {
+  const user = useSelector(state => state.user);
   return (
-    <div>Courses</div>
+    <div>
+      {user}
+    </div>
   )
 }
 

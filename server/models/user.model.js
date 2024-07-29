@@ -23,6 +23,8 @@ const userSchema = new Schema({
         enum: ['student', 'instructor', 'admin'], 
         default: 'student',
     },
+    courses: [{type: Schema.Types.ObjectId, ref: 'Course'}],
+    enrollments: [{type: Schema.Types.ObjectId, ref: 'Enrollment'}]
 }, {timestamps: true});
 
 const User = model('User', userSchema);

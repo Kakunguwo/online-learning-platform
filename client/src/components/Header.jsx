@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaSearch, FaBars, FaTimes } from "react-icons/fa";
 import {MdCastForEducation} from "react-icons/md";
+import { useSelector } from "react-redux";
 
 
 function Header() {
